@@ -5,10 +5,11 @@ function showMessage() {
 
 function compute() {
 	var principal = document.getElementById("principal").value;
-	if(parseInt(principal) < 1) {
+	if(parseInt(principal) <=0) {
 		alert("Enter a positive number");
 		document.getElementById("principal").focus();
 		return;
+
 	}
 
 
@@ -33,4 +34,5 @@ function showRange() {
 	var rate = document.getElementById("rate").value;
 	document.getElementById("ratevalue").innerHTML = rate;
 }
+
 
